@@ -1,10 +1,10 @@
 import { readFileSync } from 'fs';
 import { join } from 'path';
 
-export function day1(): number {
-  const input = readFileSync(join(__dirname, 'input.txt'), 'utf-8');
-  const lines = input.split('\n');
+const input = readFileSync(join(__dirname, 'input.txt'), 'utf-8');
+const lines = input.split('\n');
 
+export function day1(): number {
   let n1: number[] = [];
   let n2: number[] = [];
 
@@ -29,9 +29,6 @@ export function day1(): number {
 }
 
 export function day1Part2(): number {
-  const input = readFileSync(join(__dirname, 'input.txt'), 'utf-8');
-  const lines = input.split('\n');
-
   let n1: number[] = [];
   let n2: number[] = [];
   let n3: Map<number, number> = new Map();
